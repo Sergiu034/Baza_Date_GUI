@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="586.0" prefWidth="1500.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.bazedate.ApplicationController">
+  <padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+  </padding>
+   <children>
+      <Label fx:id="intro" text="DataBase App v.1.0.0" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Pane fx:id="show_result" blendMode="SRC_ATOP" prefHeight="7.0" prefWidth="1459.0" />
+      <Pane fx:id="main_menu">
+         <children>
+            <RadioButton fx:id="op_1" layoutY="6.0" mnemonicParsing="false" onAction="#firstOP" text="Să se găsească detaliile complete despre furnizori ordonat descrescător după stare și crescător după numele furnizorilor.">
+               <toggleGroup>
+                  <ToggleGroup fx:id="operation" />
+               </toggleGroup>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="op_2" layoutY="32.0" mnemonicParsing="false" onAction="#secondOP" text="Să se găsească detaliile componentelor cu masa între 100 și 500 și care sunt în ‘Cluj-Napoca’." toggleGroup="$operation">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="op_3" layoutY="57.0" mnemonicParsing="false" onAction="#thirdOP" text="Să se găsească numele proiectelor, numele componentelor și orașul astfel încâtcomponenta este furnizată proiectului și se află în același oraș." toggleGroup="$operation">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="op_4" layoutY="82.0" mnemonicParsing="false" onAction="#fourthOP" text="Să se găsească perechile de coduri de proiecte (idp1, idp2), cu condiția ca ambelorproiecte să le fie livrată de același furnizor aceeași piesă. O pereche este unică în rezultat." toggleGroup="$operation">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="op_5" layoutY="105.0" mnemonicParsing="false" onAction="#fifthOP" text="Să se găsească numele componentei livrată în cantitatea cea mai mică pentru proiectesituate în orașul ’Bistrița’." toggleGroup="$operation">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="op_6" layoutX="2.0" layoutY="130.0" mnemonicParsing="false" onAction="#sixthOP" text="Să se găsească denumirea proiectelor situate în același oraș cu orașul furnizorului ce are idf ’F001’." toggleGroup="$operation">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="op_7" layoutY="153.0" mnemonicParsing="false" onAction="#seventhOP" text="Să se găsească câte proiecte, câte componente și câți furnizori există pentru fiecare oraș(oraș, număr_proiecte, număr_componente, număr_furnizori)." toggleGroup="$operation">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="op_8" layoutY="177.0" mnemonicParsing="false" onAction="#eighthOP" text="Să se găsească pentru componenta cu codul ’C12’ cantitatea minimă și cantitateamaximă livrată." toggleGroup="$operation">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </Pane>
+
+      <Button fx:id="showContent" mnemonicParsing="false" onAction="#onShowContent" text="Show results" textAlignment="CENTER" />
+   </children>
+</VBox>
