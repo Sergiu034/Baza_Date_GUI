@@ -1,6 +1,6 @@
-GUI Project
+# GUI Project
 
-Introduction
+## Introduction
 
 This JavaFX application provides a graphical user interface (GUI) for interacting
 with the delivery management database. It facilitates the execution of predefined
@@ -8,7 +8,7 @@ queries, allowing users to view and manage information related to suppliers,
 components, projects, and deliveries. The application simplifies database
 interactions, making it accessible for users without SQL expertise.
 
-Features
+## Features
 
 • Interactive GUI: A user-friendly interface for database operations.
 
@@ -20,7 +20,7 @@ Features
   application's interface, with the ability to toggle between views and
   operations.
 
-Technologies Used
+## Technologies Used
 
 • JavaFX: For creating the GUI.
 
